@@ -1,0 +1,41 @@
+assets:
+    Asset(CAPITAL WORKS DIV 43):
+        id: 1
+        level: 0
+        assetName: CAPITAL WORKS DIV 43
+        children: [1.1, 1.2]
+
+    Asset(CAPITAL ALLOWANCE DIV 43):
+        id: 1.1
+        parent: CAPITAL WORKS DIV 43
+        level: 1
+        assetName: CAPITAL ALLOWANCE DIV 43
+        children: [1.1.1, 1.1.2]
+
+    Asset(ORIGINAL COMMON AREAS):
+        id: 1.2
+        parent: CAPITAL WORKS DIV 43
+        level: 1
+        assetName: ORIGINAL COMMON AREAS
+        children: [1.2.1]
+
+    Asset(Main Unit Capital Allowance):
+        id: 1.1.1
+        parent: CAPITAL ALLOWANCE DIV 43
+        level: 2
+        assetName: Main Unit Capital Allowance
+        children: []
+
+    Asset(Structure Renovations 2017):
+        id: 1.1.2
+        parent: CAPITAL ALLOWANCE DIV 43
+        level: 2
+        assetName: Structure Renovations 2017
+        children: []
+
+    Asset(Common Areas Common Services):
+        id: 1.2.1
+        parent: ORIGINAL COMMON AREAS
+        level: 2
+        assetName: Common Areas Common Services
+        children: []

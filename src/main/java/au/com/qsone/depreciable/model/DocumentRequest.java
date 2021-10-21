@@ -19,7 +19,7 @@ public class DocumentRequest {
     private String title;
     private String fileName;
     private Property property;
-    private Asset asset;
+    //private Asset asset;
     private Object body;
     private BigDecimal lowValuePool;
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd-MM-yyyy")

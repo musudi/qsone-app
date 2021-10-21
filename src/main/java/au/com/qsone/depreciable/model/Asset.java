@@ -1,18 +1,18 @@
 package au.com.qsone.depreciable.model;
 
-import java.math.BigDecimal;
-import java.time.LocalDate;
-
-import com.fasterxml.jackson.annotation.JsonFormat;
+import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 
 import lombok.Data;
 
 @Data
-public class Asset {
+public class Asset implements Serializable {
 
+    private String id;
+    private int level;
     private String assetName;
-    private BigDecimal price;
-    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd-MM-yyyy")
-    private LocalDate purchanseDate;
+    private Asset parent;
+    private List<Asset> children = new ArrayList<>();
 
 }
