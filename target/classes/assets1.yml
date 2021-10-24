@@ -1,0 +1,38 @@
+&id001 !!au.com.qsone.depreciable.model.Asset
+assetId: 1
+assetLevel: 0
+assetName: CAPITAL WORKS DIV 43
+assetParent: null
+children:
+- &id002
+  assetId: 2
+  assetLevel: 1
+  assetName: CAPITAL ALLOWANCE DIV 43
+  assetParent: *id001
+  children:
+  - assetId: 4
+    assetLevel: 2
+    assetName: Main Unit Capital Allowance
+    assetParent: *id002
+    children: null
+  - assetId: 5
+    assetLevel: 2
+    assetName: Structure Renovations 2017
+    assetParent: *id002
+    children: null
+- &id003
+  assetId: 3
+  assetLevel: 1
+  assetName: ORIGINAL COMMON AREAS
+  assetParent: *id001
+  children:
+  - assetId: 6
+    assetLevel: 2
+    assetName: Common Areas Common Services
+    assetParent: *id003
+    children: null
+  - assetId: 7
+    assetLevel: 2
+    assetName: Structure Renovations 2017
+    assetParent: *id003
+    children: null
